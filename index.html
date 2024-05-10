@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>todo list: by Manish maurya</title>
+</head>
+
+<body>
+    <div class="TopNav">
+        <div class="spe-btns">
+            <!-- <button class="btn" onclick="openb()">Bookmarks</button> -->
+        </div>
+        <div class="name">
+            <strong class="app-name">Todo List</strong>
+        </div>
+        <div class="btns">
+            <button class="btn" onclick="openp()">Add Tasks</button>
+            <button class="btn" onclick="opens()">Search Tasks</button>
+          
+        </div>
+    </div>
+    <div class="Display">
+        <div class="todos-con">
+            <div class="todos">
+            <!-- task will be automatically aded -->
+            </div>
+        </div>
+        <div class="layer"></div>
+        <div class="addPopup">
+            <span class="close" onclick="closep()">&times;</span>
+            <input type="text" id="todo-task" placeholder="ADD TASKS">
+            <button class="btn" onclick="addtodo()">ADD</button>
+        </div>
+        <div class="searchPopup">
+            <span class="close" onclick="closes()">&times;</span>
+            <input type="text" id="todo-tas" oninput="searchAndSortTasks()" placeholder="SEARCH YOUR TASKS">
+            <div class="searched-items"></div>
+        </div>
+        
+        <div class="bookmarkPopup">
+            <span class="close" onclick="closeb()">&times;</span>
+            <input type="text" id="todo-ta" placeholder="ADD BOOKMARK">
+            <button class="btn">ADD BOOKMARK</button>
+        </div>
+    </div>
+    <audio id="notificationSoundd">
+        <source src="mixkit-doorbell-tone-2864.wav" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+   
+    <script src="index.js"></script>
+</body>
+
+</html>

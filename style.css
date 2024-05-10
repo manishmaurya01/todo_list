@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(245, 221, 245);
+}
+.TopNav{
+    width: 100%;
+    height: 10vh;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    background-color: rgb(107, 107, 244);
+    
+}
+.btn{
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 1px solid deepskyblue;
+    background-color: rgb(123, 94, 58);
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+.btn:hover{
+    background-color: rgb(90, 80, 66);
+    color: rgb(199, 204, 209);
+}
+.spe-btns,.btns{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+.name{
+    width: auto;
+}
+.app-name{
+    font-size: 33px;
+    text-decoration: underline;
+    color: rgb(241, 141, 10);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+
+.Display{
+    width: 100%;
+    height: 100%;
+}
+.todos-con{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todos{
+    width: 70%;
+    height: 98%;
+    border-radius: 10px;
+    /* background-color: rgb(241, 223, 239); */
+    /* box-shadow: 20px 20px 60px rgba(255, 255, 255, 0.164), -20px -20px 60px  rgba(0, 0, 0, 0.279) inset; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* overflow: auto; */
+}
+.todo{
+    width: 100%;
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 5px;
+    box-shadow: 20px 20px 60px rgba(255, 255, 255, 0.164), -20px -20px 60px  rgba(0, 0, 0, 0.279) inset;
+
+}
+.todo-info{
+    width: 50%;
+    text-align: center;
+}
+.todo strong{
+    width: 50%;
+    display: flex;
+}
+.addPopup{
+    position: fixed;
+    top: 10%;
+    left: 25%;
+    width: 50%;
+    height: 90vh;
+    background-color: rgb(228, 226, 236);
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    display: none;
+}
+.addPopup input{
+    padding: 10px 20px;
+    width: 80%;
+    border: 1.5px solid deepskyblue;
+    border-radius: 15px;
+    margin: 50px 0px;
+}
+.layer{
+    background-color: rgba(0, 0, 0, 0.614);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.addPopup .btn{
+    width: 40%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+}
+.close{
+    position: fixed;
+    top: 12%;
+    right: 27%;
+    font-size: 35px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+}
+
+
+
+.searchPopup{
+    position: fixed;
+    top: 10%;
+    left: 25%;
+    width: 50%;
+    height: 90vh;
+    background-color: rgb(228, 226, 236);
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    display: none;
+}
+.searchPopup input{
+    padding: 10px 20px;
+    width: 80%;
+    border: 1.5px solid deepskyblue;
+    border-radius: 15px;
+    margin: 50px 0px;
+}
+.layer{
+    background-color: rgba(0, 0, 0, 0.614);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.searchPopup .btn{
+    width: 40%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+}
+.closs{
+    position: fixed;
+    top: 12%;
+    right: 27%;
+    font-size: 35px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+}
+
+.bookmarkPopup{
+    position: fixed;
+    top: 10%;
+    left: 25%;
+    width: 50%;
+    height: 90vh;
+    background-color: rgb(228, 226, 236);
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    display: none;
+}
+.bookmarkPopup input{
+    padding: 10px 20px;
+    width: 80%;
+    border: 1.5px solid deepskyblue;
+    border-radius: 15px;
+    margin: 50px 0px;
+}
+.layer{
+    background-color: rgba(0, 0, 0, 0.614);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.bookmarkPopup .btn{
+    width: 40%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+}
+.closs{
+    position: fixed;
+    top: 12%;
+    right: 27%;
+    font-size: 35px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+}
+
+.highlight {
+    background-color: rgba(136, 186, 195, 0.941);
+    font-weight: bold;
+}
